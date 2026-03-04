@@ -1,12 +1,10 @@
 {
   "name": "ri6",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "tsx watch src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,12 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/jopaul0/RI6/issues"
   },
   "homepage": "https://github.com/jopaul0/RI6#readme",
   "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
