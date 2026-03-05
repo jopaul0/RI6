@@ -10,7 +10,7 @@ const leitor = readline.createInterface({
 });
 
 const iniciar = () => {
-    leitor.question(msgs.instrucao(), (valor : String) => {
+    leitor.question(msgs.instrucao(), (valor : any) => {
         const instrucoes = valor.split(' '); // Ex: "10 5 Somar"
         const n1 = Number(instrucoes[0]);
         const n2 = Number(instrucoes[1]);
